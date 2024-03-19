@@ -41,10 +41,10 @@ export default function Header() {
             Além disso, também estou familiarizado com metodologias ágeis de
             desenvolvimento de software, como Scrum e Kanban, e entendo a
             importância de trabalhar de forma eficiente e eficaz para alcançar
-            os objetivos do projeto.
+            os objetivos de um projeto.
           </p>
           <p className="paragraph">
-            Em resumo, sou um desenvolvedor de software dedicado, apaixonado que
+            Em resumo, sou um desenvolvedor de software muito dedicado que
             encontrou na tecnologia a possibilidade de transformar a vida das
             pessoas e que está em constante evolução, sempre pronto para
             enfrentar novos desafios e criar soluções inovadoras.

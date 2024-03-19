@@ -16,7 +16,7 @@
 }
 
 .youtube {
-  color: white;
+  color: var(--text-color-primary);
 }
 
 .header-image{
