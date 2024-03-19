@@ -1,0 +1,46 @@
+.button-fixed svg {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 100;
+  background-color: var(--bg-color-tertiary);
+  padding: 5px;
+  font-size: 30px;
+  border-radius: 3px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  animation: fadeIn .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.button-fixed svg:hover {
+  background-color: var(--bg-color-hover);
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@media (min-width: 622px) {
+  .button-fixed svg {
+    font-size: 34px;
+  }
+}
+
+@media (min-width: 1023px) {
+  .button-fixed svg {
+    right: 40px;
+  }
+}
+
+@media (min-width: 1199px) {
+  .button-fixed svg {
+    right: 50px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .button-fixed svg {
+    right: 60px;
+  }
+}

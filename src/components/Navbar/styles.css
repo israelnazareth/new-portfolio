@@ -1,0 +1,114 @@
+.navbar {
+  display: flex;
+  padding: 24px;
+  z-index: 1;
+  user-select: none;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.name {
+  font-family: var(--font-family-primary);
+  font-size: 16px;
+}
+
+.navlink-projects,
+.navlink-techs,
+.navlink-contact {
+  color: white;
+}
+
+.navlinks, .contact-button {
+  display: none;
+}
+
+.menu-icon {
+  display: flex;
+  color: var(--text-color-primary);
+  font-size: 40px;
+}
+
+.mobile-links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  position: absolute;
+  text-align: center;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  margin: 0;
+  padding: 70px 0 0 0;
+  top: 70px;
+  line-height: 6rem;
+  font-size: 30px;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+}
+
+@media (min-width: 1023px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    width: 1024px;
+    margin: 0 auto;
+  }
+  
+  .navlinks {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color-secondary);
+    gap: 1rem;
+  }
+
+  .navlink-projects,
+  .navlink-certificates,
+  .navlink-techs,
+  .navlink-contact {
+    color: var(--text-color-secondary);
+    transition: all .1s ease-in-out;
+  }
+
+  .navlink-projects:hover,
+  .navlink-certificates:hover,
+  .navlink-techs:hover {
+    color: var(--text-color-primary);
+    cursor: pointer;
+  }
+
+  .contact-button {
+    display: inline;
+    border-radius: 4px;
+    border: none;
+    font-family: var(--font-family-primary);
+    color: var(--text-color-tertiary);
+    font-weight: 700;
+    background-color: var(--yellow-primary);
+    font-size: 15px;
+    height: 50px;
+    width: 140px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+
+  .contact-button:hover {
+    background-color: var(--yellow-hover);
+  }
+
+  .menu-icon, .mobile-links {
+    display: none;
+  }
+}
+
+@media (min-width: 1199px) {
+  .navbar {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}

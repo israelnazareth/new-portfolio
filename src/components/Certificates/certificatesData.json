@@ -1,0 +1,67 @@
+[
+  {
+    "img": "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/57729013",
+    "title": "Formação em Desenvolvimento Web",
+    "path": "https://www.credential.net/e35eec90-e327-4ce3-b649-ff9e9d3303c2#gs.rt4ulg"
+  },
+  {
+    "img": "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/57531924",
+    "title": "Ciência da Computação",
+    "path": "https://www.credential.net/1819428a-3a23-4deb-8f1c-c3f32e16ff74#gs.rt29s8"
+  },
+  {
+    "img": "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/52219826",
+    "title": "Desenvolvimento Back-End",
+    "path": "https://www.credential.net/db6d3710-44e8-4bca-aba4-ae6e3eb6106c#gs.rt2bdo"
+  },
+  {
+    "img": "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/42886922",
+    "title": "Desenvolvimento Front-End",
+    "path": "https://www.credential.net/5e0d1a23-8aaa-4bc1-9de4-13594f898429"
+  },
+  {
+    "img": "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/38013703",
+    "title": "Fundamentos do Desenvolvimento Web",
+    "path": "https://www.credential.net/168b6580-4d54-481b-93fa-239d9d69419f#gs.rt2e1b"
+  },
+  {
+    "img": "https://i.imgur.com/nj24oWe.png",
+    "title": "Back-End Development and APIs",
+    "path": "https://www.freecodecamp.org/certification/raeeel/back-end-development-and-apis"
+  },
+  {
+    "img": "https://i.imgur.com/SPSyfYX.jpg",
+    "title": "Introdução ao Hacking e Pentest 2.0",
+    "path": "certificates/Solyd.pdf"
+  },
+  {
+    "img": "https://i.imgur.com/SIqIGIH.jpg",
+    "title": "JavaScript: Formação Básica",
+    "path": "https://www.linkedin.com/learning/certificates/e7746dc277bd10808d7a17b0730456f569852d142a5d53ae48da04ca9d935647"
+  },
+  {
+    "img": "https://i.imgur.com/8XujHAu.jpg",
+    "title": "Introdução a criação de websites com HTML5 e CSS3",
+    "path": "https://www.dio.me/certificate/7A6597F1/share"
+  },
+  {
+    "img": "https://i.imgur.com/Y0K3KMb.jpg",
+    "title": "MySQL - Trabalhando com as suas primeiras tabelas",
+    "path": "https://www.dio.me/certificate/3DE99D49/share"
+  },
+  {
+    "img": "https://i.imgur.com/geQWmL7.jpg",
+    "title": "Rocketseat - Discover - Trilha Conectar",
+    "path": "https://app.rocketseat.com.br/certificates/66c35bf5-ddd9-487e-be32-93df0788a042"
+  },
+  {
+    "img": "https://i.imgur.com/egImA0e.jpg",
+    "title": "Rio Innovation Week 2022",
+    "path": "certificates/RIW2022.pdf"
+  },
+  {
+    "img": "https://i.imgur.com/rznknw8.jpg",
+    "title": "Santander Coders - ADA - Java",
+    "path": "certificates/Santander Coders - ADA.pdf"
+  }
+]
