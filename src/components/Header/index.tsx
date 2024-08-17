@@ -26,7 +26,7 @@ export default function Header() {
         <div className="header-texts">
           <h1 className="title">Olá! Meu nome é Israel.</h1>
           <p className="paragraph">
-            Tenho {currAge} anos, moro no Rio de Janeiro, sou um{" "}
+            Tenho {currAge} anos, natural do Rio de Janeiro, um{" "}
             <span className="emphasis">Desenvolvedor de Software</span>{" "}
             apaixonado por tecnologia, computadores e iniciativas que impactam
             positivamente a vida das pessoas. Estou sempre buscando aproveitar
@@ -45,7 +45,7 @@ export default function Header() {
               Compliance Station
             </a>{" "}
             utilizando tecnologias como React, Typescript, SASS, Node.js,
-            Express, Mongodb, entre outras. Curso{" "}
+            Express, Mongodb, Python, entre outras. Curso{" "}
             <span className="emphasis">Engenharia de Software</span> na
             Universidade Uniamérica ({currQuarter}/8) e também venho aprimorando
             meus conhecimentos em React na Trilha Ignite da{" "}
@@ -56,22 +56,14 @@ export default function Header() {
             >
               Rocketseat
             </a>
-            . tenho experiência em algumas linguagens de programação como
-            Javascript, Typescript, Python e estou sempre disposto a aprender
-            novas ferramentas e tecnologias para melhorar minhas habilidades e
-            conhecimentos.
+            .
           </p>
           <p className="paragraph">
             Além disso, também estou familiarizado com metodologias ágeis de
-            desenvolvimento de software, como Scrum e Kanban, e entendo a
-            importância de trabalhar de forma eficiente e eficaz para alcançar
-            os objetivos de um projeto.
-          </p>
-          <p className="paragraph">
-            Em resumo, sou um desenvolvedor de software muito dedicado que
-            encontrou na tecnologia a possibilidade de transformar a vida das
-            pessoas e que está em constante evolução, sempre pronto para
-            enfrentar novos desafios e criar soluções inovadoras.
+            desenvolvimento de software, como Scrum e Kanban, utilizando
+            ferramentas como Trello, Github Projects e entendo a importância de
+            trabalhar de forma eficiente e eficaz para alcançar os objetivos de
+            um projeto.
           </p>
           <p className="paragraph">
             Ah! E uma curiosidade sobre mim: Também sou músico! Toco guitarra,
