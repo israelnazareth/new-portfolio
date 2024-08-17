@@ -34,6 +34,7 @@
 .project-description {
   font-size: 0.875rem;
   color: var(--text-color-secondary);
+  text-align: justify;
 }
 
 .buttons-container {
@@ -87,6 +88,10 @@
     display: grid;
 		grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+  }
+
+  .project-description {
+    text-align: start;
   }
 }
 

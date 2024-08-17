@@ -13,6 +13,7 @@
 .paragraph {
   color: var(--text-color-secondary);
   font-size: 0.875rem;
+  text-align: justify;
 }
 
 .emphasis {
@@ -62,6 +63,10 @@
 
   .header-texts {
     max-width: 50%;
+  }
+
+  .paragraph {
+    text-align: start;
   }
 
   .header-image {
