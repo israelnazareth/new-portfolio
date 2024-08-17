@@ -1,5 +1,5 @@
 .certificates {
-  padding: 32px 24px;
+  padding: 2rem 1.5rem;
   padding-bottom: 0;
 }
 
@@ -13,13 +13,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .certificate img {
-  border-radius: 7px;
+  border-radius: 0.4375rem;
   width: 100%;
-  max-width: 600px;
+  max-width: 37.5rem;
   transition: all .3s ease-in-out;
 }
 
@@ -29,7 +29,7 @@
 
 @media (min-width: 767px) {
   .certificates {
-    padding: 32px 24px;
+    padding: 2rem 1.5rem;
     padding-bottom: 0;
   }
 
@@ -48,7 +48,7 @@
   }
 
   .certificate:last-child {
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -61,7 +61,7 @@
 @media (min-width: 1023px) {
   .certificates {
     display: grid;
-    max-width: 1024px;
+    max-width: 64rem;
 		margin: 0 auto;
 		grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem;
@@ -81,7 +81,7 @@
 
 @media (min-width: 1199px) {
   .certificates {
-    max-width: 1200px;
+    max-width: 75rem;
   }
 
   .certificate img {

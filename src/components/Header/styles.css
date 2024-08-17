@@ -1,18 +1,18 @@
 .header {
   display: flex;
   justify-content: center;
-  padding: 24px 24px 32px 24px;
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
 }
 
 .title {
-  margin: 20px 0;
+  margin: 1.25rem 0;
   font-size: 1.75rem;
   font-family: var(--font-family-primary);
 }
 
 .paragraph {
   color: var(--text-color-secondary);
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .emphasis {
@@ -25,11 +25,11 @@
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 3rem;
   border-radius: 50%;
-  border: 4px solid var(--yellow-primary);
+  border: 0.25rem solid var(--yellow-primary);
   overflow: hidden;
-  max-width: 500px;
+  max-width: 31.25rem;
 }
 
 .self-picture {
@@ -43,13 +43,13 @@
   }
 
   .paragraph {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 
 @media (min-width: 1023px) {
   .header {
-    width: 1024px;
+    width: 64rem;
     margin: 0 auto;
   }
 
@@ -66,7 +66,7 @@
 
   .header-image {
     user-select: none;
-    margin: 0 0 0 64px;
+    margin: 0 0 0 4rem;
   }
 
   /* Typewriting effect */
@@ -74,7 +74,7 @@
     overflow: hidden;
     border-right: 0.15em solid var(--yellow-primary);
     white-space: nowrap;
-    margin-right: 10px;
+    margin-right: 0.625rem;
     animation: typing 2s steps(30, end), blink-caret 0.9s step-end infinite;
   }
 
@@ -83,7 +83,7 @@
       width: 0;
     }
     to {
-      width: 495px;
+      width: 30.9375rem;
     }
   }
 
@@ -101,17 +101,17 @@
 
 @media (min-width: 1199px) {
   .header {
-    width: 1200px;
+    width: 75rem;
   }
 
   .header-content h1 {
-    margin-right: 97px;
+    margin-right: 6.0625rem;
   }
 }
 
 @media (min-width: 1439px) {
   .header {
-    margin: 32px auto;
+    margin: 2rem auto;
   }
 
   .paragraph {

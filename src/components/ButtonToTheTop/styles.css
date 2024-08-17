@@ -1,14 +1,14 @@
 .button-fixed svg {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 1.875rem;
+  right: 1.875rem;
   z-index: 100;
   color: var(--text-color-tertiary);
   background-color: var(--bg-color-tertiary);
-  padding: 5px;
-  font-size: 30px;
-  border-radius: 3px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  padding: 0.3125rem;
+  font-size: 1.875rem;
+  border-radius: 0.1875rem;
+  box-shadow: 0 0 0.625rem 0 rgba(0, 0, 0, 0.5);
   animation: fadeIn .2s ease-in-out;
   transition: .2s ease-in-out;
 }
@@ -24,24 +24,24 @@
 
 @media (min-width: 622px) {
   .button-fixed svg {
-    font-size: 34px;
+    font-size: 2.125rem;
   }
 }
 
 @media (min-width: 1023px) {
   .button-fixed svg {
-    right: 40px;
+    right: 2.5rem;
   }
 }
 
 @media (min-width: 1199px) {
   .button-fixed svg {
-    right: 50px;
+    right: 3.125rem;
   }
 }
 
 @media (min-width: 1400px) {
   .button-fixed svg {
-    right: 60px;
+    right: 3.75rem;
   }
 }

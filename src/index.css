@@ -27,6 +27,7 @@ html, body {
   color: var(--text-color-primary);
   scroll-behavior: smooth;
   scrollbar-color: var(--yellow-primary) var(--bg-color-primary);
+  font-size: 16px;
 }
 
 a {
@@ -50,7 +51,7 @@ img {
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb {

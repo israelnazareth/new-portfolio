@@ -10,9 +10,9 @@
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  padding: 32px 24px;
+  padding: 2rem 1.5rem;
   width: 100%;
-  height: 220px;
+  height: 13.75rem;
 }
 
 .footer-container p {
@@ -24,16 +24,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 30px;
-  width: 140px;
+  font-size: 1.875rem;
+  width: 8.75rem;
 }
 
 .socials-contact a {
-  height: 30px;
+  height: 1.875rem;
 }
 
 .copyright {
-  font-size: 14px;
+  font-size: 0.875rem;
   text-align: center;
 }
 
@@ -46,12 +46,12 @@
 
 @media (min-width: 1023px) {
   .footer-container {
-    max-width: 1024px;
+    max-width: 64rem;
   }
 }
 
 @media (min-width: 1199px) {
   .footer-container {
-    max-width: 1200px;
+    max-width: 75rem;
   }
 }
