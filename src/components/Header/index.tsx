@@ -4,9 +4,11 @@ import me from "../../assets/me.webp";
 
 export default function Header() {
   const bDay = dayjs("1992-10-27");
-  const now = dayjs();
+  const startCollege = dayjs("2024-01-01");
 
-  const yearsOld = now.diff(bDay, "year");
+  const now = dayjs();
+  const currAge = now.diff(bDay, "year");
+  const currQuarter = now.diff(startCollege, "quarter");
 
   return (
     <header data-aos="fade-in" className="header">
@@ -24,15 +26,37 @@ export default function Header() {
         <div className="header-texts">
           <h1 className="title">Olá! Meu nome é Israel.</h1>
           <p className="paragraph">
-            Tenho {yearsOld} anos, moro no Rio de Janeiro, sou um Desenvolvedor
-            de Software apaixonado por tecnologia, computadores e iniciativas
-            que impactam positivamente a vida das pessoas. Estou sempre buscando
-            aproveitar novas oportunidades de trabalhar com coisas novas, viver
-            novas experiências e me aventurar em desafios que possam me tirar da
-            zona de conforto.
+            Tenho {currAge} anos, moro no Rio de Janeiro, sou um{" "}
+            <span className="emphasis">Desenvolvedor de Software</span>{" "}
+            apaixonado por tecnologia, computadores e iniciativas que impactam
+            positivamente a vida das pessoas. Estou sempre buscando aproveitar
+            novas oportunidades de trabalhar com coisas novas, viver novas
+            experiências e me aventurar em desafios que possam me tirar da zona
+            de conforto.
           </p>
           <p className="paragraph">
-            Tenho experiência em algumas linguagens de programação como
+            Atualmente trabalho como{" "}
+            <span className="emphasis">Desenvolvedor Web</span> na{" "}
+            <a
+              href="https://compliancestation.com.br/"
+              target="_blank"
+              className="emphasis"
+            >
+              Compliance Station
+            </a>{" "}
+            utilizando tecnologias como React, Typescript, SASS, Node.js,
+            Express, Mongodb, entre outras. Curso{" "}
+            <span className="emphasis">Engenharia de Software</span> na
+            Universidade Uniamérica ({currQuarter}/8) e também venho aprimorando
+            meus conhecimentos em React na Trilha Ignite da{" "}
+            <a
+              href="https://rocketseat.com.br/"
+              target="_blank"
+              className="emphasis"
+            >
+              Rocketseat
+            </a>
+            . tenho experiência em algumas linguagens de programação como
             Javascript, Typescript, Python e estou sempre disposto a aprender
             novas ferramentas e tecnologias para melhorar minhas habilidades e
             conhecimentos.
@@ -55,7 +79,7 @@ export default function Header() {
             A música tem um papel muito importante na minha vida! Vou deixar
             aqui o meu{" "}
             <a
-              className="youtube"
+              className="emphasis"
               target="_blank"
               href="https://www.youtube.com/channel/UCm-QQd9NknX0tu32-atWYVQ"
               rel="noreferrer"

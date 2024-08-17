@@ -15,11 +15,11 @@
   font-size: 14px;
 }
 
-.youtube {
+.emphasis {
   color: var(--text-color-primary);
 }
 
-.header-image{
+.header-image {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,22 +72,29 @@
   /* Typewriting effect */
   .header-content h1 {
     overflow: hidden;
-    border-right: .15em solid var(--yellow-primary);
+    border-right: 0.15em solid var(--yellow-primary);
     white-space: nowrap;
     margin-right: 10px;
-    animation: 
-      typing 2s steps(30, end),
-      blink-caret .9s step-end infinite;
+    animation: typing 2s steps(30, end), blink-caret 0.9s step-end infinite;
   }
 
   @keyframes typing {
-    from { width: 0 }
-    to { width: 495px }
+    from {
+      width: 0;
+    }
+    to {
+      width: 495px;
+    }
   }
 
   @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: var(--yellow-primary); }
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: var(--yellow-primary);
+    }
   }
   /* end effect */
 }
