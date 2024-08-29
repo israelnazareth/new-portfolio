@@ -1,25 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Poppins:wght@300;500;700&family=Prata&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Poppins:wght@300;500;700&family=Prata&display=swap");
 
 :root {
-  --font-family-primary: 'Prata', serif;
-  --font-family-secondary: 'Inter', sans-serif;
+  --font-family-primary: "Prata", serif;
+  --font-family-secondary: "Inter", sans-serif;
 
-  --bg-color-primary: #000;
-  --bg-color-secondary: #2E3038;
-  --bg-color-tertiary: #FFF;
-  --bg-color-hover: #D0D0D0;
+  --bg-color-primary: #00060e;
+  --bg-color-secondary: #000e1c;
+  --bg-color-tertiary: #fff;
+  --bg-color-hover: #d0d0d0;
 
-  --text-color-primary: #FFF;
-  --text-color-secondary: #ADADAD;
+  --text-color-primary: #fff;
+  --text-color-secondary: #adadad;
   --text-color-tertiary: #000;
 
-  --yellow-primary: #FBE850;
-  --yellow-hover: #C5B640;
+  --yellow-primary: #ffd60a;
+  --yellow-hover: #cbab0b;
 
-  --danger: #F00;
+  --danger: #f00;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   font-family: var(--font-family-secondary);
@@ -41,8 +42,8 @@ a {
   font: inherit;
 }
 
-img { 
-  user-select:none;
+img {
+  user-select: none;
 }
 
 ::selection {
