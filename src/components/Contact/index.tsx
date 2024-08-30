@@ -2,7 +2,7 @@ import { FormEvent, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./styles.css";
 
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
@@ -61,7 +61,6 @@ export default function Contact() {
 
   return (
     <div data-aos="fade-in" className="contact" id="contact">
-      <ToastContainer />
       <div className="contact-container">
         <h1 className="contact-title">Tem interesse em trabalhar comigo?</h1>
         <p className="contact-paragraph">

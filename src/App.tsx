@@ -6,6 +6,7 @@ import Certificates from "./components/Certificates";
 import Techs from "./components/Technologies";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { ToastContainer } from "react-toastify";
 import "./App.css";
 
 import AOS from "aos";
@@ -15,6 +16,7 @@ AOS.init({ duration: 500 });
 function App() {
   return (
     <div className="App">
+      <ToastContainer />
       <ProgressBar />
       <Navbar />
       <Header />
