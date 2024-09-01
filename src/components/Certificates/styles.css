@@ -20,11 +20,11 @@
   border-radius: 0.4375rem;
   width: 100%;
   max-width: 37.5rem;
-  transition: all .3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .certificate img:hover {
-  transform: scale(1.02);
+  opacity: 0.7;
 }
 
 @media (min-width: 767px) {
@@ -62,8 +62,8 @@
   .certificates {
     display: grid;
     max-width: 64rem;
-		margin: 0 auto;
-		grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem;
   }
 
@@ -74,7 +74,7 @@
 
   .certificates-container {
     display: grid;
-		grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
   }
 }
