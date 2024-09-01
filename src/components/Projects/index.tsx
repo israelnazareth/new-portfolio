@@ -16,12 +16,16 @@ export default function Projects() {
               <p className="project-description">{description}</p>
             </div>
             <div className="buttons-container">
-              <a href={pageURL} target="blank">
-                <button className="button-left">Ver aplicação</button>
-              </a>
-              <a href={githubURL} target="blank">
-                <button className="button-right">Ver código</button>
-              </a>
+              <button className="button-left">
+                <a href={pageURL} target="blank">
+                  Ver aplicação
+                </a>
+              </button>
+              <button className="button-right">
+                <a href={githubURL} target="blank">
+                  Ver código
+                </a>
+              </button>
             </div>
           </div>
         ))}

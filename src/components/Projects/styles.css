@@ -13,10 +13,13 @@
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 3.125rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: var(--bg-color-secondary);
 }
 
 .project img {
-  border-radius: 0.4375rem;
+  border-radius: 0.5rem;
   max-width: 100%;
   transition: all 0.2s ease-in-out;
 }
@@ -39,11 +42,15 @@
 
 .buttons-container {
   display: flex;
-  justify-content: space-evenly;
+  gap: 1.5rem;
 }
 
 .button-left,
 .button-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   font-family: var(--font-family-primary);
   color: var(--text-color-tertiary);
   background-color: var(--yellow-primary);
@@ -51,8 +58,7 @@
   font-weight: 700;
   font-size: 0.875rem;
   border: none;
-  height: 3.125rem;
-  width: 8.125rem;
+  padding: 1rem;
   cursor: pointer;
   margin-top: auto;
   transition: all 0.2s ease-in-out;
