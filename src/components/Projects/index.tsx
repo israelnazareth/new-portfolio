@@ -12,7 +12,7 @@ export default function Projects() {
           ({ img, title, description, deployUrl, githubURL }) => (
             <div data-aos="fade-in" className="project" key={title}>
               <div className="project-content">
-                <a href={deployUrl} target="blank">
+                <a href={deployUrl || githubURL} target="blank">
                   <img src={img} alt={title} width="100%" height="auto" />
                 </a>
                 <h1 className="project-title">{title}</h1>
