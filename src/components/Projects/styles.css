@@ -45,8 +45,7 @@
   gap: 1rem;
 }
 
-.button-left,
-.button-right {
+.buttons-container button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,9 +63,13 @@
   transition: all 0.2s ease-in-out;
 }
 
-.button-left:hover,
-.button-right:hover {
+.buttons-container button:hover {
   opacity: 0.7;
+}
+
+.buttons-container button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 @media (min-width: 767px) {
