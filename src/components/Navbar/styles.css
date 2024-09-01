@@ -85,7 +85,7 @@
 
   .contact-button {
     display: inline;
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
     border: none;
     font-family: var(--font-family-primary);
     color: var(--text-color-tertiary);

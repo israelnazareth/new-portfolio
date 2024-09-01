@@ -54,7 +54,7 @@
   font-family: var(--font-family-primary);
   color: var(--text-color-tertiary);
   background-color: var(--yellow-primary);
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-weight: 700;
   font-size: 0.875rem;
   border: none;
