@@ -42,7 +42,7 @@
 
 .buttons-container {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .button-left,
@@ -70,6 +70,10 @@
 }
 
 @media (min-width: 767px) {
+  .buttons-container {
+    gap: 1.5rem;
+  }
+
   .project-title {
     font-size: 2rem;
   }
