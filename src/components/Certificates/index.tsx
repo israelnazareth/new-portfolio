@@ -29,6 +29,7 @@ export default function Certificates() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: false,
         },
       },
     ],
