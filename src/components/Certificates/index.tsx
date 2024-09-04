@@ -9,34 +9,20 @@ export default function Certificates() {
     className: "center",
     centerMode: true,
     infinite: true,
-    centerPadding: "0",
     dots: true,
     slidesToShow: 3,
-    speed: 500,
+    slidesToScroll: 3,
     initialSlide: 1,
+    speed: 300,
+    dotsClass: "slick-dots",
     responsive: [
       {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
+        breakpoint: 1023,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          infinite: true,
+          dots: false,
         },
       },
     ],
