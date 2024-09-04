@@ -19,10 +19,16 @@ export default function Certificates() {
       {
         breakpoint: 1023,
         settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          infinite: true,
-          dots: false,
         },
       },
     ],
