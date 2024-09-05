@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { Modal } from "../Modal";
 import Slider, { Settings } from "react-slick";
 import certificatesData from "./certificatesData.json";
 import "slick-carousel/slick/slick.css";
@@ -35,20 +37,66 @@ export default function Certificates() {
     ],
   };
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalContent, setModalContent] = useState<JSX.Element | null>(null);
+
+  const handleModal = (img: string, path: string) => {
+    setIsModalOpen(true);
+    setModalContent(
+      img ? (
+        <div className="modal-content">
+          <img src={img} style={{ width: "100%" }} />
+          <div className="action-buttons">
+            <button
+              type="button"
+              onClick={() => window.open(path, "_blank")}
+              className="go-to-certificate"
+            >
+              Ir para certificado
+            </button>
+            <button
+              type="button"
+              onClick={() => setIsModalOpen(false)}
+              className="close"
+            >
+              Fechar
+            </button>
+          </div>
+        </div>
+      ) : null
+    );
+  };
+
+  const buttonStyle = {
+    width: "fit-content",
+    border: "none",
+    padding: 0,
+    cursor: "pointer",
+  };
+
   return (
-    <div data-aos="fade-in" className="certificates" id="certificates">
-      <h1 className="title">Certificados</h1>
-      <div className="slider-container">
-        <Slider {...settings}>
-          {certificatesData.map(({ img, path, title }) => (
-            <div data-aos="fade-in" className="certificate" key={title}>
-              <a href={path} target="blank">
-                <img src={img} alt={title} loading="lazy" title={title} />
-              </a>
-            </div>
-          ))}
-        </Slider>
+    <>
+      <div data-aos="fade-in" className="certificates" id="certificates">
+        <h1 className="title">Certificados</h1>
+        <div className="slider-container">
+          <Slider {...settings}>
+            {certificatesData.map(({ img, path, title }) => (
+              <div data-aos="fade-in" className="certificate" key={title}>
+                <button
+                  type="button"
+                  onClick={() => handleModal(img, path)}
+                  style={buttonStyle}
+                >
+                  <img src={img} alt={title} title={title} />
+                </button>
+              </div>
+            ))}
+          </Slider>
+        </div>
       </div>
-    </div>
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+        {modalContent}
+      </Modal>
+    </>
   );
 }
