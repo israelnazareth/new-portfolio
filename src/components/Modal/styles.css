@@ -1,0 +1,78 @@
+.modal-wrapper {
+  position: fixed;
+  height: 100dvh;
+  width: 100dvw;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: modal-appear-smoothly 0.3s;
+}
+
+@keyframes modal-appear-smoothly {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 1.5rem;
+}
+
+.modal-content img {
+  border-radius: 0.25rem;
+  max-width: 60rem;
+}
+
+.modal-content .action-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 1rem;
+}
+
+.action-buttons button {
+  width: 100%;
+  margin: 1rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-weight: 600;
+  color: #000;
+  transition: background-color 0.3s;
+  font-family: "Prata", serif;
+}
+
+.action-buttons .close {
+  background-color: var(--bg-color-secondary);
+  color: var(--text-color-primary);
+}
+
+.action-buttons .go-to-certificate {
+  background-color: var(--yellow-primary);
+}
+
+.modal-content .close-button {
+  cursor: pointer;
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+  color: #000;
+}
