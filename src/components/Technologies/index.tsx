@@ -13,14 +13,14 @@ export default function Techs() {
           <h1 className="techs-name">React e Redux</h1>
         </div>
         <div className="techs-data">
-          <IconFA.FaHtml5 color="#F26A2F" />
-          <IconFA.FaCss3Alt color="#3F9DD7" />
-          <h1 className="techs-name">HTML5 e CSS3</h1>
-        </div>
-        <div className="techs-data">
           <IconSI.SiJavascript className="logoJs" color="#F7E028" />
           <IconSI.SiTypescript color="#167ECF" />
           <h1 className="techs-name">Javascript e Typescript</h1>
+        </div>
+        <div className="techs-data">
+          <IconFA.FaHtml5 color="#F26A2F" />
+          <IconFA.FaCss3Alt color="#3F9DD7" />
+          <h1 className="techs-name">HTML5 e CSS3</h1>
         </div>
         <div className="techs-data">
           <IconFA.FaGitAlt color="#F15539" />
