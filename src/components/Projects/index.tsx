@@ -5,7 +5,7 @@ export default function Projects() {
   const redirectTo = (url: string) => window.open(url, "_blank");
 
   return (
-    <div data-aos="fade-in" className="projects" id="projects">
+    <div className="projects" id="projects">
       <h1 className="title">Projetos</h1>
       <div className="projects-container">
         {projectsData.map(
