@@ -1,5 +1,3 @@
-import Aos from "aos";
-import "aos/dist/aos.css";
 import { ToastContainer } from "react-toastify";
 import "./App.css";
 import Certificates from "./components/Certificates";
@@ -10,8 +8,6 @@ import Navbar from "./components/Navbar";
 import ProgressBar from "./components/ProgressBar";
 import Projects from "./components/Projects";
 import Techs from "./components/Technologies";
-
-Aos.init({ anchorPlacement: "bottom-bottom", offset: 150 });
 
 function App() {
   return (
