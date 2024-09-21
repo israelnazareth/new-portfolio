@@ -21,10 +21,14 @@ const useAnimationOnScroll = (animation: Animation = 'fadeIn', arraySize: number
           const { top, bottom } = element.getBoundingClientRect();
           const windowHeight = window.innerHeight;
 
-          if (top <= windowHeight && bottom >= 0) {
+          if (top + 150 <= windowHeight && bottom + 150 >= 0) {
+            element.style.opacity = '1';
+            element.classList.remove('fadeOut');
             return element.classList.add(animation);
           }
 
+          element.style.opacity = '0';
+          element.classList.add('fadeOut');
           element.classList.remove(animation);
         }
       });
