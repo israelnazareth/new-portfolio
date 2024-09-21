@@ -1,8 +1,10 @@
-import "./styles.css";
 import dayjs from "dayjs";
 import me from "../../assets/me.webp";
+import useAnimationOnScroll from "../../hooks/useAnimationOnScroll";
+import "./styles.css";
 
 export default function Header() {
+  const { ref } = useAnimationOnScroll();
   const bDay = dayjs("1992-10-27");
   const startCollege = dayjs("2024-01-01");
 
@@ -11,7 +13,7 @@ export default function Header() {
   const currQuarter = now.diff(startCollege, "quarter");
 
   return (
-    <header data-aos="fade-in" className="header">
+    <div className="header" ref={ref}>
       <div className="header-content">
         <div className="header-image">
           <img
@@ -82,6 +84,6 @@ export default function Header() {
           </p>
         </div>
       </div>
-    </header>
+    </div>
   );
 }

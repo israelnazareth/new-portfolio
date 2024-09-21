@@ -1,14 +1,17 @@
-import { FormEvent, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { FormEvent, useRef, useState } from "react";
 import "./styles.css";
 
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import useAnimationOnScroll from "../../hooks/useAnimationOnScroll";
 
 export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
+  const { ref } = useAnimationOnScroll();
 
   const counterRef = useRef<HTMLParagraphElement>(null);
   const counter = counterRef.current;
@@ -60,7 +63,7 @@ export default function Contact() {
   }
 
   return (
-    <div data-aos="fade-in" className="contact" id="contact">
+    <div className="contact" id="contact" ref={ref}>
       <div className="contact-container">
         <h1 className="contact-title">Tem interesse em trabalhar comigo?</h1>
         <p className="contact-paragraph">
