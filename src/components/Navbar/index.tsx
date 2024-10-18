@@ -3,10 +3,13 @@ import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import MobileNavigator from "./MobileNavigator";
 
+import ButtonToTheTop from "../ButtonToTheTop";
 import "./styles.css";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
+  document.body.style.overflow = isOpen ? "hidden" : "auto";
 
   const closedIcon = (
     <FiMenu className="menu-icon" onClick={() => setIsOpen(true)} />
@@ -40,6 +43,7 @@ export default function Navbar() {
         {isOpen && <MobileNavigator closeMenu={closeMenu} />}
         {isOpen ? openedIcon : closedIcon}
       </div>
+      {!isOpen && <ButtonToTheTop />}
     </div>
   );
 }

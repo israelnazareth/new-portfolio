@@ -1,6 +1,5 @@
-import { GrGithub, GrLinkedin } from "react-icons/gr";
 import { BsWhatsapp } from "react-icons/bs";
-import ButtonToTheTop from "../ButtonToTheTop";
+import { GrGithub, GrLinkedin } from "react-icons/gr";
 import "./styles.css";
 
 export default function Footer() {
@@ -34,7 +33,7 @@ export default function Footer() {
           <div>&copy; 2022 | Desenvolvido por Israel Nazareth</div>
           <div>Todos os direitos reservados</div>
         </div>
-        <ButtonToTheTop />
+        <div></div>
       </div>
     </footer>
   );
