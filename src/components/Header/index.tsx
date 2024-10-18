@@ -5,12 +5,14 @@ import "./styles.css";
 
 export default function Header() {
   const { ref } = useAnimationOnScroll();
-  const bDay = dayjs("1992-10-27");
-  const startCollege = dayjs("2024-01-01");
-
   const now = dayjs();
+
+  const bDay = dayjs("1992-10-27");
   const currAge = now.diff(bDay, "year");
-  const currQuarter = now.diff(startCollege, "quarter");
+
+  const startCollege = dayjs("2024-01-01");
+  const diffMonths = now.diff(startCollege, "month");
+  const currSemester = Math.floor(diffMonths / 6) + 1;
 
   return (
     <div className="header" ref={ref}>
@@ -49,8 +51,8 @@ export default function Header() {
             utilizando tecnologias como React, Typescript, SASS, Node.js,
             Express, Mongodb, Python, entre outras. Curso{" "}
             <span className="emphasis">Engenharia de Software</span> na
-            Universidade Uniamérica ({currQuarter}/8) e também venho aprimorando
-            meus conhecimentos em React na Trilha Ignite da{" "}
+            Universidade Uniamérica ({currSemester}/8) e também venho
+            aprimorando meus conhecimentos em React na Trilha Ignite da{" "}
             <a
               href="https://rocketseat.com.br/"
               target="_blank"
