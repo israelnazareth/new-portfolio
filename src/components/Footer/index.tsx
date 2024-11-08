@@ -1,3 +1,4 @@
+import dayjs from "dayjs";
 import { BsWhatsapp } from "react-icons/bs";
 import { GrGithub, GrLinkedin } from "react-icons/gr";
 import "./styles.css";
@@ -30,7 +31,10 @@ export default function Footer() {
           </a>
         </div>
         <div className="copyright">
-          <div>&copy; 2022 | Desenvolvido por Israel Nazareth</div>
+          <div>
+            &copy; 2022 - {dayjs().get("year")} | Desenvolvido por Israel
+            Nazareth
+          </div>
           <div>Todos os direitos reservados</div>
         </div>
         <div></div>
