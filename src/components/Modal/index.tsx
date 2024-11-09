@@ -1,4 +1,5 @@
-import Modal from "react-modal";
+import { Modal } from "react-responsive-modal";
+import "react-responsive-modal/styles.css";
 import "./styles.css";
 
 interface ModalProps {
@@ -8,25 +9,12 @@ interface ModalProps {
 }
 
 export function CertificateModal({ children, isOpen, onClose }: ModalProps) {
-  isOpen
-    ? (document.body.style.overflow = "hidden")
-    : (document.body.style.overflow = "auto");
-
   return (
     <Modal
-      isOpen={isOpen}
-      onRequestClose={onClose}
-      style={{
-        content: {
-          margin: "auto",
-          maxWidth: "50rem",
-          height: "fit-content",
-          borderRadius: "1.75rem",
-        },
-        overlay: {
-          backgroundColor: "rgba(255, 255, 255, 0.25)",
-        },
-      }}
+      open={isOpen}
+      onClose={onClose}
+      classNames={{ modal: "modal" }}
+      center
     >
       {children}
     </Modal>

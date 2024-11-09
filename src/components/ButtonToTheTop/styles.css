@@ -9,8 +9,8 @@
   font-size: 1.875rem;
   border-radius: 0.1875rem;
   box-shadow: 0 0 0.625rem 0 rgba(0, 0, 0, 0.5);
-  animation: fadeIn .2s ease-in-out;
-  transition: .2s ease-in-out;
+  animation: fadeIn 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .button-fixed svg:hover {
@@ -18,8 +18,12 @@
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media (min-width: 622px) {

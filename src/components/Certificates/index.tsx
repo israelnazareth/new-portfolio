@@ -7,9 +7,28 @@ import certificatesData from "./certificatesData.json";
 import "./styles.css";
 
 export default function Certificates() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalContent, setModalContent] = useState<JSX.Element | null>(null);
+  const [swiped, setSwiped] = useState(false);
+
+  const handleOnItemClick = (event: React.MouseEvent<HTMLDivElement>) => {
+    if (swiped) {
+      event.stopPropagation();
+      event.preventDefault();
+      setSwiped(false);
+    }
+  };
+
+  const handleSwipeEvent = (swipeDirection: string) => {
+    if (swipeDirection === "left" || swipeDirection === "right") {
+      setSwiped(true);
+    }
+  };
+
   const settings: Settings = {
+    swipeEvent: handleSwipeEvent,
+    afterChange: () => setSwiped(false),
     className: "center",
-    centerMode: true,
     infinite: true,
     dots: true,
     slidesToShow: 3,
@@ -37,16 +56,14 @@ export default function Certificates() {
     ],
   };
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalContent, setModalContent] = useState<JSX.Element | null>(null);
-
   const handleModal = (img: string, path: string) => {
     setIsModalOpen(true);
-    setModalContent(
+    const content = (
       <a href={path} target="_blank">
         <img src={img} style={{ width: "100%", borderRadius: "0.5rem" }} />
       </a>
     );
+    setModalContent(content);
   };
 
   const buttonStyle = {
@@ -64,7 +81,12 @@ export default function Certificates() {
         <div className="slider-container">
           <Slider {...settings}>
             {certificatesData.map(({ img, path, title }) => (
-              <div data-aos="fade-in" className="certificate" key={title}>
+              <div
+                data-aos="fade-in"
+                className="certificate"
+                onClickCapture={handleOnItemClick}
+                key={title}
+              >
                 <button
                   type="button"
                   onClick={() => handleModal(img, path)}
