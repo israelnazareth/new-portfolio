@@ -1,3 +1,4 @@
+import Modal from "react-modal";
 import "./styles.css";
 
 interface ModalProps {
@@ -6,14 +7,28 @@ interface ModalProps {
   isOpen: boolean;
 }
 
-export function Modal({ children, isOpen, onClose }: ModalProps) {
+export function CertificateModal({ children, isOpen, onClose }: ModalProps) {
+  isOpen
+    ? (document.body.style.overflow = "hidden")
+    : (document.body.style.overflow = "auto");
+
   return (
-    isOpen && (
-      <div className="modal-wrapper" onClick={onClose}>
-        <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-          {children}
-        </div>
-      </div>
-    )
+    <Modal
+      isOpen={isOpen}
+      onRequestClose={onClose}
+      style={{
+        content: {
+          margin: "auto",
+          maxWidth: "50rem",
+          height: "fit-content",
+          borderRadius: "1.75rem",
+        },
+        overlay: {
+          backgroundColor: "rgba(255, 255, 255, 0.25)",
+        },
+      }}
+    >
+      {children}
+    </Modal>
   );
 }

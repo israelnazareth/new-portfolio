@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { Modal } from "../Modal";
 import Slider, { Settings } from "react-slick";
-import certificatesData from "./certificatesData.json";
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import { CertificateModal } from "../Modal";
+import certificatesData from "./certificatesData.json";
 import "./styles.css";
 
 export default function Certificates() {
@@ -43,27 +43,9 @@ export default function Certificates() {
   const handleModal = (img: string, path: string) => {
     setIsModalOpen(true);
     setModalContent(
-      img ? (
-        <div className="modal-content">
-          <img src={img} style={{ width: "100%" }} />
-          <div className="action-buttons">
-            <button
-              type="button"
-              onClick={() => window.open(path, "_blank")}
-              className="go-to-certificate"
-            >
-              Ir para certificado
-            </button>
-            <button
-              type="button"
-              onClick={() => setIsModalOpen(false)}
-              className="close"
-            >
-              Fechar
-            </button>
-          </div>
-        </div>
-      ) : null
+      <a href={path} target="_blank">
+        <img src={img} style={{ width: "100%", borderRadius: "0.5rem" }} />
+      </a>
     );
   };
 
@@ -72,6 +54,7 @@ export default function Certificates() {
     border: "none",
     padding: 0,
     cursor: "pointer",
+    borderRadius: "0.75rem",
   };
 
   return (
@@ -94,9 +77,12 @@ export default function Certificates() {
           </Slider>
         </div>
       </div>
-      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+      <CertificateModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      >
         {modalContent}
-      </Modal>
+      </CertificateModal>
     </>
   );
 }
