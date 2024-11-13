@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/desconselhos",
-      "destination": "https://desconselhos.vercel.app/"
+      "source": "/coffee",
+      "destination": "https://coffee-delivery-madureira.vercel.app/"
     }
   ]
 }
