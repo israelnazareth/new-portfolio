@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/desconselhos",
-      "destination": "desconselhos.vercel.app"
+      "destination": "https://desconselhos.vercel.app/"
     }
   ]
 }
