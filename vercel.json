@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/desconselhos",
+      "destination": "https://desconselhos.vercel.app/"
+    }
+  ]
+}
