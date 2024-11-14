@@ -1,8 +1,8 @@
 {
   "routes": [
     {
-      "src": "/desconselhos",
-      "dest": "https://desconselhos.vercel.app/"
+      "src": "/coffee",
+      "dest": "https://coffee-delivery-madureira.vercel.app/"
     }
   ]
 }
