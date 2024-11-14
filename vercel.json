@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/desconselhos",
-      "destination": "https://desconselhos.vercel.app"
+      "source": "/google",
+      "destination": "https://www.google.com"
     }
   ]
 }
