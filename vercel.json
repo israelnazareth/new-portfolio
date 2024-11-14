@@ -1,8 +1,8 @@
 {
-  "rewrites": [
+  "routes": [
     {
-      "source": "/desconselhos",
-      "destination": "https://desconselhos.vercel.app/"
+      "src": "/desconselhos",
+      "dest": "https://desconselhos.vercel.app/"
     }
   ]
 }
