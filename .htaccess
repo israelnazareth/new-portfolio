@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^desconselhos/(.*)$ https://desconselhos.vercel.app/$1 [P,L]
