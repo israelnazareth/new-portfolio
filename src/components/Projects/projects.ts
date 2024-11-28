@@ -18,7 +18,7 @@ export const projects = [
     title: "ToDo List",
     description: "Este é um projeto criado na Trilha Ignite da Rocketseat onde foi desenvolvida uma aplicação web para gerenciamento de tarefas rotineiras do usuário. As principais tecnologias utilizadas neste projeto foram React.js, Vite.js e Typescript.",
     githubURL: "https://github.com/israelnazareth/new-todo-list",
-    deployUrl: "https://your-todo-list-two.vercel.app/"
+    deployUrl: "https://todit.vercel.app/"
   },
   {
     img: "projects/ignite-feed.webp",
