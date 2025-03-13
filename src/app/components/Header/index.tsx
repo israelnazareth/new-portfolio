@@ -1,6 +1,7 @@
 import dayjs from "dayjs";
-import me from "../../assets/me.webp";
-import useAnimationOnScroll from "../../hooks/useAnimationOnScroll";
+import Image from "next/image";
+import me from "@/assets/me.webp";
+import useAnimationOnScroll from "@/hooks/useAnimationOnScroll";
 import "./styles.css";
 
 export default function Header() {
@@ -18,13 +19,12 @@ export default function Header() {
     <div className="header" ref={ref}>
       <div className="header-content">
         <div className="header-image">
-          <img
+          <Image
             className="self-picture"
             src={me}
             alt="Foto de um homem branco com cabelos escuros sorrindo"
-            fetchPriority="high"
-            width="100%"
-            height="100%"
+            priority
+            width={500}
           />
         </div>
         <div className="header-texts">

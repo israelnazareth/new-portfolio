@@ -1,21 +1,22 @@
-import axios from "axios";
-import { Cell, ResponseData, Row } from "../@types";
-
-const GOOGLE_SHEETS_ID = import.meta.env.VITE_GOOGLE_SHEETS_ID;
-
 export async function getProjectsDataFromSheet() {
-  const URL = `https://docs.google.com/spreadsheets/d/${GOOGLE_SHEETS_ID}/gviz/tq?tqx=out:json`;
-  const response = await axios.get(URL);
+  try {
+    const URL = `https://script.google.com/macros/s/AKfycbwMd22kn58JkaVng_t2Fzv2-PUDk5z05jb5TC9dk8DyROOlJqO5ABtmIaCikplSZJA/exec`;
+    const ONE_DAY = 60 * 60 * 24;
+    const response = await fetch(URL, {
+      next: { 
+        revalidate: ONE_DAY,
+        tags: ['projects']
+      },
+      cache: 'force-cache'
+    });
 
-  if (response.status !== 200) {
-    throw new Error('Failed to fetch data from Google Sheets');
+    if (response.status !== 200) {
+      throw new Error('Failed to fetch data from Google Sheets');
+    }
+
+    return response.json();
+  } catch (error) {
+    console.error('Failed to fetch data from Google Sheets', error);
+    return null;
   }
-
-  const data: ResponseData = JSON.parse(response.data.substr(47).slice(0, -2));
-  const projects = data.table.rows.map((row: Row) => {
-    const [img, title, description, githubURL, deployUrl] = row.c.map((cell: Cell) => cell.v);
-    return { img, title, description, githubURL, deployUrl };
-  }).slice(1);
-
-  return projects;
 }

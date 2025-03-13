@@ -4,7 +4,7 @@ import "./styles.css";
 
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import useAnimationOnScroll from "../../hooks/useAnimationOnScroll";
+import useAnimationOnScroll from "@/hooks/useAnimationOnScroll";
 
 export default function Contact() {
   const [name, setName] = useState("");

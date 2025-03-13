@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import MobileNavigator from "./MobileNavigator";
@@ -9,7 +9,9 @@ import "./styles.css";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  document.body.style.overflow = isOpen ? "hidden" : "auto";
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "auto";
+  }, [isOpen]);
 
   const closedIcon = (
     <FiMenu className="menu-icon" onClick={() => setIsOpen(true)} />
