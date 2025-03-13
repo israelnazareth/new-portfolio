@@ -1,11 +1,13 @@
 import { useEffect, useRef, RefObject } from "react";
 import "./styles.css";
+import { getProjectsDataFromSheet } from "../../services";
 
 export default function ProgressBar() {
   const progressBar: RefObject<HTMLDivElement> = useRef(null);
 
   useEffect(() => {
     window.onscroll = () => setProgressBarWidth();
+    getProjectsDataFromSheet();
   }, []);
 
   function setProgressBarWidth() {
