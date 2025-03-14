@@ -12,9 +12,9 @@ export default function Projects() {
   const redirectTo = (url: string) => window.open(url, "_blank");
 
   const getDataProjects = async () => {
-    // const data = await getProjectsDataFromSheet();
-    // setProjects(data);
-    // setLoading(false);
+    const data = await getProjectsDataFromSheet();
+    setProjects(data);
+    setLoading(false);
   };
 
   useEffect(() => {

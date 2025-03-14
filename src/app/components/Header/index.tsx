@@ -1,6 +1,6 @@
 import dayjs from "dayjs";
 import Image from "next/image";
-import me from "@/assets/me.webp";
+import me from '@/assets/me.webp'
 import useAnimationOnScroll from "@/hooks/useAnimationOnScroll";
 import "./styles.css";
 
@@ -23,8 +23,8 @@ export default function Header() {
             className="self-picture"
             src={me}
             alt="Foto de um homem branco com cabelos escuros sorrindo"
+            style={{ width: '100%', height: 'auto' }}
             priority
-            width={500}
           />
         </div>
         <div className="header-texts">

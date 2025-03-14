@@ -40,7 +40,7 @@
   list-style: none;
   position: absolute;
   text-align: center;
-  background-color: rgba(var(--bg-color-primary), 0.85);
+  background-color: rgba(0, 6, 14, 0.85);
   width: 100vw;
   height: 100vh;
   left: 0;

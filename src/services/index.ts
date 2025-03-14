@@ -3,7 +3,7 @@ export async function getProjectsDataFromSheet() {
     const URL = `https://script.google.com/macros/s/AKfycbwMd22kn58JkaVng_t2Fzv2-PUDk5z05jb5TC9dk8DyROOlJqO5ABtmIaCikplSZJA/exec`;
     const ONE_DAY = 60 * 60 * 24;
     const response = await fetch(URL, {
-      next: { 
+      next: {
         revalidate: ONE_DAY,
         tags: ['projects']
       },
