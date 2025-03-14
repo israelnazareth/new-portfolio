@@ -1,3 +1,5 @@
+"use server";
+
 export async function getProjectsDataFromSheet() {
   try {
     const URL = `https://script.google.com/macros/s/AKfycbwMd22kn58JkaVng_t2Fzv2-PUDk5z05jb5TC9dk8DyROOlJqO5ABtmIaCikplSZJA/exec`;
@@ -6,8 +8,7 @@ export async function getProjectsDataFromSheet() {
       next: {
         revalidate: ONE_DAY,
         tags: ['projects']
-      },
-      cache: 'force-cache'
+      }
     });
 
     if (response.status !== 200) {

@@ -28,7 +28,7 @@ export default function Projects() {
         <SkeletonTheme baseColor="#202020" highlightColor="#444">
           <div className="projects-container">
             {[...Array(4)].map((_, index) => (
-              <div className="project" key={index}>
+              <div className="project" key={index} ref={refs[index]}>
                 <div className="project-content">
                   <Skeleton height={200} />
                   <Skeleton height={40} width={200} style={{ marginTop: '1rem' }} />
