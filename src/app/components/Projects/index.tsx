@@ -1,16 +1,48 @@
-import React from "react";
-import useAnimationOnScroll from "../../hooks/useAnimationOnScroll";
-import { projects } from "./projects";
+import React, { useEffect, useState } from "react";
+import useAnimationOnScroll from "@/hooks/useAnimationOnScroll";
 import "./styles.css";
+import { getProjectsDataFromSheet } from "@/services";
+import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 
 export default function Projects() {
+  const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
   const { refs } = useAnimationOnScroll("fadeIn", projects.length);
 
   const redirectTo = (url: string) => window.open(url, "_blank");
 
+  const getDataProjects = async () => {
+    const data = await getProjectsDataFromSheet();
+    setProjects(data);
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    getDataProjects();
+  }, []);
+
   return (
     <div className="projects" id="projects">
       <h1 className="title">Projetos</h1>
+      {loading && (
+        <SkeletonTheme baseColor="#202020" highlightColor="#444">
+          <div className="projects-container">
+            {[...Array(4)].map((_, index) => (
+              <div className="project" key={index} ref={refs[index]}>
+                <div className="project-content">
+                  <Skeleton height={200} />
+                  <Skeleton height={40} width={200} style={{ marginTop: '1rem' }} />
+                  <Skeleton count={3} style={{ marginTop: '1rem' }} />
+                </div>
+                <div className="buttons-container">
+                  <Skeleton containerClassName="skeleton-button" height={40} />
+                  <Skeleton containerClassName="skeleton-button" height={40} />
+                </div>
+              </div>
+            ))}
+          </div>
+        </SkeletonTheme>
+      )}
       <div className="projects-container">
         {React.Children.toArray(
           projects.map(

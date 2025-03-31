@@ -1,13 +1,14 @@
 import { ToastContainer } from "react-toastify";
 import "./App.css";
-import Certificates from "./components/Certificates";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Navbar from "./components/Navbar";
-import ProgressBar from "./components/ProgressBar";
-import Projects from "./components/Projects";
-import Techs from "./components/Technologies";
+import Certificates from "./app/components/Certificates";
+import Contact from "./app/components/Contact";
+import Footer from "./app/components/Footer";
+import Header from "./app/components/Header";
+import Navbar from "./app/components/Navbar";
+import ProgressBar from "./app/components/ProgressBar";
+import Projects from "./app/components/Projects";
+import Techs from "./app/components/Technologies";
+import "react-loading-skeleton/dist/skeleton.css";
 
 function App() {
   return (

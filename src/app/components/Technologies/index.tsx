@@ -1,5 +1,5 @@
 import React from "react";
-import useAnimationOnScroll from "../../hooks/useAnimationOnScroll";
+import useAnimationOnScroll from "@/hooks/useAnimationOnScroll";
 import "./styles.css";
 import { techs } from "./techs";
 

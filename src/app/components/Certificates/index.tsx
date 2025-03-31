@@ -1,4 +1,4 @@
-import useAnimationOnScroll from "../../hooks/useAnimationOnScroll";
+import useAnimationOnScroll from "@/hooks/useAnimationOnScroll";
 import certificatesData from "./certificatesData.json";
 import "./styles.css";
 
