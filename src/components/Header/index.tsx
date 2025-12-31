@@ -7,9 +7,6 @@ export default function Header() {
   const { ref } = useAnimationOnScroll();
   const now = dayjs();
 
-  const bDay = dayjs("1992-10-27");
-  const currAge = now.diff(bDay, "year");
-
   const startCollege = dayjs("2024-01-01");
   const diffMonths = now.diff(startCollege, "month");
   const currSemester = Math.floor(diffMonths / 6) + 1;
@@ -30,7 +27,7 @@ export default function Header() {
         <div className="header-texts">
           <h1 className="title">Olá! Meu nome é Israel.</h1>
           <p className="paragraph">
-            Tenho {currAge} anos, natural do Rio de Janeiro, um{" "}
+            Natural do Rio de Janeiro, sou um{" "}
             <span className="emphasis">Desenvolvedor de Software</span>{" "}
             apaixonado por tecnologia, computadores e iniciativas que impactam
             positivamente a vida das pessoas. Estou sempre buscando aproveitar
@@ -42,11 +39,12 @@ export default function Header() {
             Atualmente trabalho como{" "}
             <span className="emphasis">Desenvolvedor Web</span> na{" "}
             <a
-              href="https://compliancestation.com.br/"
+              href="https://www.contatoseguro.com.br/"
               target="_blank"
+              rel="noopener noreferrer"
               className="emphasis"
             >
-              Compliance Station
+              Contato Seguro
             </a>{" "}
             utilizando tecnologias como React, Typescript, SASS, Node.js,
             Express, Mongodb, Python, entre outras. Curso{" "}
@@ -56,6 +54,7 @@ export default function Header() {
             <a
               href="https://rocketseat.com.br/"
               target="_blank"
+              rel="noopener noreferrer"
               className="emphasis"
             >
               Rocketseat
@@ -78,7 +77,7 @@ export default function Header() {
               className="emphasis"
               target="_blank"
               href="https://www.youtube.com/channel/UCm-QQd9NknX0tu32-atWYVQ"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               canal no Youtube
             </a>{" "}
